@@ -54,6 +54,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
+  word-wrap: break-word;
 }
 
 h1 {
@@ -413,7 +414,7 @@ footer {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--card);
+    background: #e19c23;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
@@ -652,4 +653,22 @@ footer {
 .max-content {
   max-width: 74ch;
   margin: 0 auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 11px;
+  }
+  .wrap.hero-grid {
+    padding-top: 30px;
+}
+
+.pros-container-wrapper {
+    flex-direction: column;
+}
+.pros-container {
+  width: 100%;
+}
 }
